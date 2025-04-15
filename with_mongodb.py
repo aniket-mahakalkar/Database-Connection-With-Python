@@ -19,3 +19,7 @@ collection.insert_one({"name": "Aniket", "age": 21})
 # Update Data
 
 collection.update_one({"name": "Aniket"}, {"$set": {"age": 22}})
+
+
+# Delete Data
+collection.delete_one({"name": "Aniket"})

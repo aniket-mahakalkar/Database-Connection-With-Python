@@ -35,3 +35,8 @@ values = (22, "Aniket")
 cursor.execute(query, values)
 conn.commit()
 
+# Delete Data
+query = "DELETE FROM users WHERE name = %s"
+cursor.execute(query, ("Aniket",))
+conn.commit()
+
